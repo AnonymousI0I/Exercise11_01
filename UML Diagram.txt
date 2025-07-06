@@ -1,0 +1,36 @@
+-------------------------------------------------
+GeometricObject
+-------------------------------------------------
+- color : String
+- filled : boolean
+- dateCreated : Date
+-------------------------------------------------
++ GeometricObject()
++ GeometricObject(color:Boolean, filled:Boolean)
++ getColor() : String
++ setColor(c:String) : void
++ isFilled() : boolean
++ setFilled(f:boolean) : void
++ getDateCreated() : Date
++ getArea() : double          «abstract»
++ getPerimeter() : double     «abstract»
+-------------------------------------------------
+
+                ▲
+                │ (extends)
+-------------------------------------------------
+Triangle
+-------------------------------------------------
+- side1 : double = 1.0
+- side2 : double = 1.0
+- side3 : double = 1.0
+-------------------------------------------------
++ Triangle()
++ Triangle(s1:double, s2:double, s3:double)
++ getSide1() : double
++ getSide2() : double
++ getSide3() : double
++ getArea() : double
++ getPerimeter() : double
++ toString() : String
+-------------------------------------------------
